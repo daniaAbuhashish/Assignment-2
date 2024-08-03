@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INST 377 Activities - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1 class="page-title">INST 377 Activities</h1>
+
+    <div class="nav-container">
+        <ul>
+            <li><a href="Allpages.html">Home</a></li>
+            <li><a href="stockspage.html">Stocks</a></li>
+            <li><a href="Dogspage.html">Dogs</a></li>
+        </ul>
+    </div>
+
+        <div class="buttons">
+            <a href="stockspage.html" class="custom-button stocks-button">Stocks</a>
+            <a href="Dogspage.html" class="custom-button dogs-button">Dogs</a>
+        </div>
+
+    <div class="quote-box">
+        <h2>Quote of the Day</h2>
+        <div id = "quote"></div>
+    </div>
+
+    
+
+    <div class="audio-instructions">
+        <h2>Audio Instructions</h2>
+        <p>Say "Hello" to hear a greeting.</p>
+        <p>Say "Alerts with Hello World" for an alert.</p>
+        <p>Say "Change the color to &lt;color&gt;" to change the background color.</p>
+        <p>Say "Navigate to &lt;page&gt;" to navigate to a page.</p>
+        <button id="turn-on-audio" onclick="startListening()">Turn On Audio</button>
+        <!-- Turn Off Audio Button -->
+        <button id="turn-off-audio" onclick="stopListening()">Turn Off Audio</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src ="script.js"></script>
+
+</body>
+
+</html>
+
+<html>
+
+<head>
+    <title>Allpages</title>
+    <style>
+.nav-container {
+    background-color: papayawhip;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+.nav-container ul li {
+    margin-right: 10px;
+}
+
+.nav-container ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-container ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-container ul li a:hover {
+    background-color: plum;
+    color: black;
+}
+
+.page-title {
+    margin-left: 20px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.stocks-button {
+    margin-right: 10px;
+}
+
+.dogs-button {
+    margin-left: 10px;
+}
+
+.audio-instructions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+.quote-box {
+    border: 2px solid black; 
+    padding: 20px; 
+    margin-top: 20px;
+}
+.audio-instructions {
+    border: 2px solid black; 
+    padding: 20px; 
+    margin-top: 20px;
+}
